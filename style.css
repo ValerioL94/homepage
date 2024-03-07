@@ -121,6 +121,36 @@ main > h1 {
 .cardTitle > h2 {
   text-shadow: 1px 5px 10px grey;
 }
+#projectOne > .screenshot,
+#projectOne button:hover,
+#projectOne button:focus {
+  background-color: orange;
+}
+#projectTwo > .screenshot,
+#projectTwo button:hover,
+#projectTwo button:focus {
+  background-color: green;
+}
+#projectThree > .screenshot,
+#projectThree button:hover,
+#projectThree button:focus {
+  background-color: purple;
+}
+#projectFour > .screenshot,
+#projectFour button:hover,
+#projectFour button:focus {
+  background-color: yellow;
+}
+#projectFive > .screenshot,
+#projectFive button:hover,
+#projectFive button:focus {
+  background-color: blue;
+}
+#projectSix > .screenshot,
+#projectSix button:hover,
+#projectSix button:focus {
+  background-color: red;
+}
 
 .screenshot {
   display: flex;
@@ -128,7 +158,6 @@ main > h1 {
   justify-content: center;
   min-height: 200px;
   box-shadow: 0px 1px 3px;
-  background-color: orange;
 }
 .description {
   padding: 0 5%;
@@ -138,10 +167,7 @@ main > h1 {
   justify-content: space-between;
   align-items: center;
 }
-.cardTitle > .socials > button:hover,
-.cardTitle > .socials > button:focus {
-  background-color: orange;
-}
+
 footer {
   display: flex;
   justify-content: center;
