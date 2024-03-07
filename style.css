@@ -12,7 +12,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 50px 0;
+  padding: 25px 0 50px;
   box-shadow: 0 1px 5px;
   box-sizing: border-box;
   background-color: rgb(0, 174, 255);
@@ -95,11 +95,11 @@ main {
 }
 
 main > h1 {
-  align-self: flex-start;
   text-shadow: 5px 5px 5px grey;
 }
 .projectsWrapper {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
 }
@@ -173,11 +173,12 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   gap: 100px;
-  padding: 50px 0;
+  padding: 50px 25px 25px;
   box-shadow: 0 -1px 5px;
   background-color: rgb(0, 174, 255);
   box-sizing: border-box;
 }
+
 .contactInfo > h1 {
   text-shadow: 5px 5px 5px grey;
 }
@@ -185,9 +186,6 @@ footer {
 .email {
   display: flex;
   align-items: center;
-  justify-content: start;
-  gap: 5px;
-  padding-bottom: 5px;
 }
 .contactInfo > .socials > button:hover,
 .contactInfo > .socials > button:focus {
