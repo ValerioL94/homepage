@@ -12,7 +12,8 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding: 50px 0;
+  box-shadow: 0 1px 5px;
   box-sizing: border-box;
   background-color: rgb(0, 174, 255);
 }
@@ -25,6 +26,7 @@ header {
   background-image: url(images/banner.jpg);
   background-size: cover;
   background-position: center;
+  box-shadow: -1px 1px 5px;
 }
 
 .name {
@@ -36,23 +38,47 @@ header {
   min-height: 300px;
   max-width: 600px;
   background-color: white;
-  height: fit-content;
-  border: 1px solid;
+  box-shadow: -1px 1px 3px 1px;
   line-height: 200%;
   box-sizing: border-box;
 }
-.socialIcons {
-  display: flex;
-  gap: 10px;
-}
-#bannerText .socialIcons {
+
+#bannerText .socials {
   justify-content: end;
 }
-
-.socialIcons > img {
-  width: 30px;
+.socials {
+  display: flex;
+  gap: 15px;
 }
-
+.socials > button {
+  background: none;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+.socials > button > img {
+  width: 30px;
+  height: 30px;
+}
+.socials > button:hover,
+.socials > button:focus {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid;
+  background-color: rgb(231, 231, 11);
+  animation: pulse linear 1.5s alternate infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
 main {
   display: flex;
   align-items: center;
@@ -77,6 +103,11 @@ main > h1 {
   min-width: 250px;
   border: 1px solid;
   transition: transform ease-in-out 0.5s;
+}
+
+.card:hover,
+.card:focus {
+  transform: scale(1.1);
 }
 
 .screenshot {
@@ -111,18 +142,6 @@ footer {
   align-items: center;
   justify-content: start;
   padding-bottom: 15px;
-}
-
-img {
-  transition: transform ease-in-out 0.8s;
-}
-.card:hover,
-.card:focus {
-  transform: scale(1.1);
-}
-.socialIcons > img:hover,
-.socialIcons > img:focus {
-  transform: rotate(360deg);
 }
 
 footer > img {
