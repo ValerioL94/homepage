@@ -129,12 +129,12 @@ main > h1 {
 #projectTwo > .screenshot,
 #projectTwo button:hover,
 #projectTwo button:focus {
-  background-color: green;
+  background-color: rgb(0, 182, 0);
 }
 #projectThree > .screenshot,
 #projectThree button:hover,
 #projectThree button:focus {
-  background-color: purple;
+  background-color: rgb(255, 0, 255);
 }
 #projectFour > .screenshot,
 #projectFour button:hover,
@@ -144,7 +144,7 @@ main > h1 {
 #projectFive > .screenshot,
 #projectFive button:hover,
 #projectFive button:focus {
-  background-color: blue;
+  background-color: rgb(113, 113, 255);
 }
 #projectSix > .screenshot,
 #projectSix button:hover,
