@@ -7,28 +7,46 @@ html {
   font-family: Madimi One, sans-serif;
 }
 
-/* .content {
-  display: grid;
-  grid-template-areas:
-    header header header
-    main main main
-    footer footer footer;
-} */
-
 header {
   display: flex;
-  padding: 50px 100px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  box-sizing: border-box;
   background-color: rgb(0, 174, 255);
 }
-#bannerPhoto > img {
-  width: 350px;
-}
-.name {
-  font-size: 50px;
-  position: relative;
-  bottom: 11%;
+#bannerPhoto {
   display: flex;
+  align-items: end;
   justify-content: center;
+  min-height: 500px;
+  min-width: 300px;
+  background-image: url(images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.name {
+  padding: 0 10px;
+  font-size: clamp(2.5rem, 3vw, 4.5rem);
+}
+#bannerText {
+  padding: 25px;
+  min-height: 300px;
+  max-width: 600px;
+  background-color: white;
+  height: fit-content;
+  border: 1px solid;
+  line-height: 200%;
+  box-sizing: border-box;
+}
+.socialIcons {
+  display: flex;
+  gap: 10px;
+}
+#bannerText .socialIcons {
+  justify-content: end;
 }
 
 .socialIcons > img {
@@ -36,29 +54,40 @@ header {
 }
 
 main {
-  padding: 50px 100px;
-  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  gap: 25px;
+  box-sizing: border-box;
+}
+
+main > h1 {
+  align-self: flex-start;
 }
 .projectsWrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
 }
+
 .card {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
   border: 1px solid;
-  max-height: 350px;
-  max-width: 400px;
+  transition: transform ease-in-out 0.5s;
 }
 
 .screenshot {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
+  min-height: 200px;
   border-bottom: 1px solid;
 }
 .description {
-  margin: 0 10px;
+  padding: 0 5%;
 }
 .cardTitle {
   display: flex;
@@ -68,21 +97,35 @@ main {
 
 footer {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 100px;
   padding: 50px 100px;
   background-color: rgb(0, 174, 255);
+  box-sizing: border-box;
 }
 
 .phoneNumber,
 .email {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: start;
+  padding-bottom: 15px;
 }
-.contactInfo img {
-  width: 30px;
+
+img {
+  transition: transform ease-in-out 0.8s;
+}
+.card:hover,
+.card:focus {
+  transform: scale(1.1);
+}
+.socialIcons > img:hover,
+.socialIcons > img:focus {
+  transform: rotate(360deg);
 }
 
 footer > img {
-  width: 600px;
+  min-width: 300px;
+  max-width: 600px;
 }
