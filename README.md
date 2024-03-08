@@ -2,6 +2,8 @@
 
 Building a responsive homepage
 
+favicon from: https://icons8.com/icon/Lpnt8eaW59hz/home
+
 Sun icon from: https://icons8.com/icons/set/sun
 
 github, linkedIn, X (twitter) icons from: https://devicon.dev/
