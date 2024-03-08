@@ -18,6 +18,27 @@ header {
   background-color: dodgerblue;
   border-bottom-right-radius: 100%;
 }
+#themeSwitch {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  transition: transform linear 0.5s;
+  padding: 5px;
+  height: 55px;
+  width: 55px;
+  box-sizing: border-box;
+}
+#themeImage {
+  height: 45px;
+  width: 45px;
+}
+.spin {
+  transform: rotate(90deg);
+}
 
 #bannerPhoto {
   position: relative;
@@ -207,7 +228,7 @@ footer > img {
   max-width: 600px;
   box-shadow: 1px 1px 5px 2px;
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
   body,
   #bannerText {
@@ -234,4 +255,45 @@ footer > img {
   .footerWrapper > .socials > button:focus {
     background-color: rgb(20, 20, 20);
   }
+} */
+
+body.dark {
+  color: whitesmoke;
+  background-color: rgb(20, 20, 20);
+}
+body.dark #themeImage {
+  filter: invert();
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+body.dark #bannerText {
+  color: whitesmoke;
+  background-color: rgb(20, 20, 20);
+}
+body.dark header,
+body.dark footer,
+body.dark #bannerText > .socials > button:hover,
+body.dark #bannerText > .socials > button:focus {
+  background-color: midnightblue;
+}
+body.dark #bannerPhoto > img {
+  filter: brightness(0.8);
+}
+body.dark .socials > button:hover,
+body.dark .socials > button:focus {
+  border-color: whitesmoke;
+}
+body.dark .socials > button > img {
+  filter: invert();
+}
+body.dark .footerWrapper > .socials > button:hover,
+body.dark .footerWrapper > .socials > button:focus {
+  background-color: rgb(20, 20, 20);
 }
