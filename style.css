@@ -6,7 +6,18 @@ html {
   height: 100%;
   font-family: Madimi One, sans-serif;
 }
-
+html::-webkit-scrollbar {
+  width: 20px;
+}
+html::-webkit-scrollbar-track {
+  background: rgb(200, 200, 200);
+  border: 3px solid;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: rgb(100, 100, 100);
+  border: 2px solid;
+  border-radius: 15px;
+}
 header {
   display: flex;
   flex-wrap: wrap;
@@ -234,6 +245,7 @@ body.dark {
   color: whitesmoke;
   background-color: rgb(20, 20, 20);
 }
+
 body.dark #themeImage {
   filter: invert();
 }
