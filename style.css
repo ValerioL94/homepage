@@ -18,6 +18,7 @@ header {
   background-color: dodgerblue;
   border-bottom-right-radius: 100%;
 }
+
 #bannerPhoto {
   position: relative;
   max-height: 570px;
@@ -215,19 +216,22 @@ footer > img {
   }
   header,
   footer,
-  .socials > button:hover,
-  .socials > button:focus {
+  #bannerText > .socials > button:hover,
+  #bannerText > .socials > button:focus {
     background-color: midnightblue;
   }
   #bannerPhoto > img {
     filter: brightness(0.8);
   }
-  .socials > button,
-  .socials > button {
-    background-color: whitesmoke;
+  .socials > button:hover,
+  .socials > button:focus {
+    border-color: whitesmoke;
+  }
+  .socials > button > img {
+    filter: invert();
   }
   .footerWrapper > .socials > button:hover,
   .footerWrapper > .socials > button:focus {
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(20, 20, 20);
   }
 }
