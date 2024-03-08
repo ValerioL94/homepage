@@ -228,34 +228,6 @@ footer > img {
   max-width: 600px;
   box-shadow: 1px 1px 5px 2px;
 }
-/* 
-@media (prefers-color-scheme: dark) {
-  body,
-  #bannerText {
-    color: whitesmoke;
-    background-color: rgb(20, 20, 20);
-  }
-  header,
-  footer,
-  #bannerText > .socials > button:hover,
-  #bannerText > .socials > button:focus {
-    background-color: midnightblue;
-  }
-  #bannerPhoto > img {
-    filter: brightness(0.8);
-  }
-  .socials > button:hover,
-  .socials > button:focus {
-    border-color: whitesmoke;
-  }
-  .socials > button > img {
-    filter: invert();
-  }
-  .footerWrapper > .socials > button:hover,
-  .footerWrapper > .socials > button:focus {
-    background-color: rgb(20, 20, 20);
-  }
-} */
 
 body.dark {
   color: whitesmoke;
@@ -263,15 +235,6 @@ body.dark {
 }
 body.dark #themeImage {
   filter: invert();
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
 }
 body.dark #bannerText {
   color: whitesmoke;
