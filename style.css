@@ -19,20 +19,22 @@ header {
   border-bottom-right-radius: 100%;
 }
 #bannerPhoto {
+  position: relative;
+  max-height: 570px;
   display: flex;
-  align-items: end;
-  justify-content: center;
-  min-height: 500px;
-  min-width: 300px;
-  background-image: url(images/banner.jpg);
-  background-size: cover;
-  background-position: center;
+}
+#bannerPhoto > img {
+  width: 100%;
+  max-width: 400px;
   box-shadow: -1px 1px 5px;
 }
-
 .name {
-  margin: 0 5px;
-  font-size: clamp(2.5rem, 3vw, 4.5rem);
+  position: absolute;
+  margin: 0;
+  bottom: 0%;
+  left: 5%;
+  right: 5%;
+  font-size: clamp(2.5rem, 2.5vw, 3rem);
   text-shadow: 5px 5px 5px grey;
 }
 #bannerText {
@@ -192,7 +194,7 @@ footer {
   background-color: white;
 }
 footer > img {
-  min-width: 300px;
+  width: 100%;
   max-width: 600px;
   box-shadow: 1px 1px 5px 2px;
 }
